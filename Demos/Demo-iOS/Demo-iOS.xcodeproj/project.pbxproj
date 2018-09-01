@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DC60E481E2BA1170044BFD3 /* PocketSVG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC60E471E2BA1170044BFD3 /* PocketSVG.framework */; };
 		1DC60E4E1E2BAA200044BFD3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC60E4C1E2BAA200044BFD3 /* Launch Screen.storyboard */; };
+		5AD50C2B213AAF88000C0E59 /* PocketSVG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD50C2A213AAF88000C0E59 /* PocketSVG.framework */; };
+		5AD50C2C213AAF88000C0E59 /* PocketSVG.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD50C2A213AAF88000C0E59 /* PocketSVG.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5AD50C2F213AAFA5000C0E59 /* UnfoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD50C2E213AAFA5000C0E59 /* UnfoldViewController.swift */; };
+		5AD50C31213AAFCC000C0E59 /* RP1Template12-Border-Mask.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5AD50C30213AAFCC000C0E59 /* RP1Template12-Border-Mask.svg */; };
 		B09D909A1D6C5E2E00360396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D90991D6C5E2E00360396 /* AppDelegate.swift */; };
 		B09D90A11D6C5E2E00360396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09D90A01D6C5E2E00360396 /* Assets.xcassets */; };
 		B0B592052074F7B80009ECA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B592042074F7B80009ECA2 /* MainViewController.swift */; };
@@ -23,9 +26,26 @@
 		B0B59245207532CC0009ECA2 /* rectangle.svg in Resources */ = {isa = PBXBuildFile; fileRef = B0B59244207532CC0009ECA2 /* rectangle.svg */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5AD50C2D213AAF88000C0E59 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5AD50C2C213AAF88000C0E59 /* PocketSVG.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1DC60E471E2BA1170044BFD3 /* PocketSVG.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PocketSVG.framework; path = "../../build/Debug-iphoneos/PocketSVG.framework"; sourceTree = "<group>"; };
 		1DC60E4D1E2BAA200044BFD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		5AD50C2A213AAF88000C0E59 /* PocketSVG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PocketSVG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD50C2E213AAFA5000C0E59 /* UnfoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfoldViewController.swift; sourceTree = "<group>"; };
+		5AD50C30213AAFCC000C0E59 /* RP1Template12-Border-Mask.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "RP1Template12-Border-Mask.svg"; sourceTree = "<group>"; };
 		B09D90961D6C5E2E00360396 /* Demo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09D90991D6C5E2E00360396 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B09D90A01D6C5E2E00360396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DC60E481E2BA1170044BFD3 /* PocketSVG.framework in Frameworks */,
+				5AD50C2B213AAF88000C0E59 /* PocketSVG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,7 @@
 		B09D908D1D6C5E2E00360396 = {
 			isa = PBXGroup;
 			children = (
+				5AD50C2A213AAF88000C0E59 /* PocketSVG.framework */,
 				B0B5920C207508E30009ECA2 /* Sample SVG Files */,
 				B09D90981D6C5E2E00360396 /* Demo-iOS */,
 				B09D90971D6C5E2E00360396 /* Products */,
@@ -89,6 +110,7 @@
 				B0B5921720750C370009ECA2 /* RectangleViewController.swift */,
 				B0B59220207514970009ECA2 /* IcelandicViewController.swift */,
 				B0B5922220751E760009ECA2 /* GrayscaleTigerViewController.swift */,
+				5AD50C2E213AAFA5000C0E59 /* UnfoldViewController.swift */,
 				1DC60E4C1E2BAA200044BFD3 /* Launch Screen.storyboard */,
 				B09D90A01D6C5E2E00360396 /* Assets.xcassets */,
 				B09D90A51D6C5E2E00360396 /* Info.plist */,
@@ -104,6 +126,7 @@
 				B0B5920F207508E30009ECA2 /* iceland.svg */,
 				B0B59242207532C60009ECA2 /* tiger.svg */,
 				B0B59244207532CC0009ECA2 /* rectangle.svg */,
+				5AD50C30213AAFCC000C0E59 /* RP1Template12-Border-Mask.svg */,
 			);
 			name = "Sample SVG Files";
 			path = "../Sample SVG Files";
@@ -119,6 +142,7 @@
 				B09D90921D6C5E2E00360396 /* Sources */,
 				B09D90931D6C5E2E00360396 /* Frameworks */,
 				B09D90941D6C5E2E00360396 /* Resources */,
+				5AD50C2D213AAF88000C0E59 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +165,7 @@
 				TargetAttributes = {
 					B09D90951D6C5E2E00360396 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FQCFR2VMWQ;
 						LastSwiftMigration = 0920;
 					};
 				};
@@ -169,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B59245207532CC0009ECA2 /* rectangle.svg in Resources */,
+				5AD50C31213AAFCC000C0E59 /* RP1Template12-Border-Mask.svg in Resources */,
 				B0B59214207508E30009ECA2 /* iceland.svg in Resources */,
 				B0B59213207508E30009ECA2 /* curve.svg in Resources */,
 				B0B59243207532C60009ECA2 /* tiger.svg in Resources */,
@@ -189,6 +215,7 @@
 				B0B592072074F9240009ECA2 /* SimpleDetailViewController.swift in Sources */,
 				B0B59221207514970009ECA2 /* IcelandicViewController.swift in Sources */,
 				B0B5922320751E760009ECA2 /* GrayscaleTigerViewController.swift in Sources */,
+				5AD50C2F213AAFA5000C0E59 /* UnfoldViewController.swift in Sources */,
 				B0B592052074F7B80009ECA2 /* MainViewController.swift in Sources */,
 				B09D909A1D6C5E2E00360396 /* AppDelegate.swift in Sources */,
 			);
@@ -314,6 +341,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FQCFR2VMWQ;
 				INFOPLIST_FILE = "Demo-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PocketSVG.Demo-iOS";
@@ -327,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FQCFR2VMWQ;
 				INFOPLIST_FILE = "Demo-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PocketSVG.Demo-iOS";
